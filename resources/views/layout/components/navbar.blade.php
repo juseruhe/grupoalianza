@@ -11,8 +11,21 @@
           <i class="fas fa-globe"></i> Paises
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="#">Mostrar Paises</a></li>
-            <li><a class="dropdown-item" href="#"> Crear País</a></li>
+            <li><a class="dropdown-item" href="{{route('country.index')}}">Mostrar Paises</a></li>
+            <li><a class="dropdown-item" href="{{route('country.create')}}"> Crear País</a></li>
+        
+          </ul>
+        </li>
+
+
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fas fa-address-book"></i> Cargos
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="{{route('position.index')}}">Mostrar Cargos</a></li>
+            <li><a class="dropdown-item" href="{{route('position.create')}}"> Crear Cargo</a></li>
         
           </ul>
         </li>
