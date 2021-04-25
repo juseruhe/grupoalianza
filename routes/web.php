@@ -5,6 +5,7 @@ use App\Http\Controllers\CountryController;
 use App\Http\Controllers\PositionController;
 use App\Http\Controllers\GenderController;
 use App\Http\Controllers\Document_TypeController;
+use App\Http\Controllers\CityController;
 
 /*
 |--------------------------------------------------------------------------
@@ -59,6 +60,15 @@ Route::get('tipo_documento/{id}',[Document_TypeController::class,'show'])->name(
 Route::get('tipo_documento/editar/{id}',[Document_TypeController::class,'edit'])->name('document_type.edit');
 Route::put('tipo_documento/{id}',[Document_TypeController::class,'update'])->name('document_type.update');
 Route::delete('tipo_documento/{id}',[Document_TypeController::class,'destroy'])->name('document_type.destroy');
+
+// Ciudades
+Route::get('ciudad',[CityController::class,'index'])->name('city.index');
+Route::get('ciudad/crear',[CityController::class,'create'])->name('city.create');
+Route::post('ciudad',[CityController::class,'store'])->name('city.store');
+Route::get('ciudad/{id}',[CityController::class,'show'])->name('city.show');
+Route::get('ciudad/editar/{id}',[CityController::class,'edit'])->name('city.edit');
+Route::put('ciudad/{id}',[CityController::class,'update'])->name('city.update');
+Route::delete('ciudad/{id}',[CityController::class,'destroy'])->name('city.destroy');
 
 
 

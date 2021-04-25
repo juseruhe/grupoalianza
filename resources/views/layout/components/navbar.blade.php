@@ -55,6 +55,17 @@
         </li>
 
 
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fas fa-city"></i> Ciudades
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="{{route('city.index')}}">Mostrar Ciudades</a></li>
+            <li><a class="dropdown-item" href="{{route('city.create')}}"> Crear Ciudad</a></li>
+        
+          </ul>
+        </li>
+
 
 
       </ul>

@@ -7,6 +7,8 @@ use Database\Seeders\CountrySeeder;
 use Database\Seeders\PositionSeeder;
 use Database\Seeders\GenderSeeder;
 use Database\Seeders\Document_TypeSeeder;
+use Database\Seeders\CitySeeder;
+
 
 class DatabaseSeeder extends Seeder
 {
@@ -23,5 +25,8 @@ class DatabaseSeeder extends Seeder
         $this->call(PositionSeeder::class);
         $this->call(GenderSeeder::class);
         $this->call(Document_TypeSeeder::class);
+        $this->call(CitySeeder::class);
+       
+
     }
 }
