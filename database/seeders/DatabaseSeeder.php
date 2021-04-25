@@ -5,6 +5,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 use Database\Seeders\CountrySeeder;
 use Database\Seeders\PositionSeeder;
+use Database\Seeders\GenderSeeder;
 
 class DatabaseSeeder extends Seeder
 {
@@ -19,5 +20,6 @@ class DatabaseSeeder extends Seeder
 
         $this->call(CountrySeeder::class);
         $this->call(PositionSeeder::class);
+        $this->call(GenderSeeder::class);
     }
 }

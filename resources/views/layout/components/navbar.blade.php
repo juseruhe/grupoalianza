@@ -29,6 +29,23 @@
         
           </ul>
         </li>
+
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fas fa-venus-mars"></i> Generos
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="{{route('gender.index')}}">Mostrar Género</a></li>
+            <li><a class="dropdown-item" href="{{route('gender.create')}}"> Crear Género</a></li>
+        
+          </ul>
+        </li>
+
+
+
+
+
       </ul>
     </div>
   </div>

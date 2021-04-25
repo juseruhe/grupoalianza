@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CountryController;
 use App\Http\Controllers\PositionController;
+use App\Http\Controllers\GenderController;
 
 /*
 |--------------------------------------------------------------------------
@@ -38,6 +39,16 @@ Route::get('cargo/{id}',[PositionController::class,'show'])->name('position.show
 Route::get('cargo/edit/{id}',[PositionController::class,'edit'])->name('position.edit');
 Route::put('cargo/{id}',[PositionController::class,'update'])->name('position.update');
 Route::delete('cargo/{id}',[PositionController::class,'destroy'])->name('position.destroy');
+
+// Genero
+Route::get('genero',[GenderController::class,'index'])->name('gender.index');
+Route::get('genero/crear',[GenderController::class,'create'])->name('gender.create');
+Route::post('genero',[GenderController::class,'store'])->name('gender.store');
+Route::get('genero/{id}',[GenderController::class,'show'])->name('gender.show');
+Route::get('genero/edit/{id}',[GenderController::class,'edit'])->name('gender.edit');
+Route::put('genero/{id}',[GenderController::class,'update'])->name('gender.update');
+Route::delete('genero/{id}',[GenderController::class,'destroy'])->name('gender.destroy');
+
 
 
 
